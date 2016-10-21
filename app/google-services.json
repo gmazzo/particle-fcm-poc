@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1057594243834",
+    "firebase_url": "https://particle-poc.firebaseio.com",
+    "project_id": "particle-poc",
+    "storage_bucket": "particle-poc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1057594243834:android:a89552247a3e06d4",
+        "android_client_info": {
+          "package_name": "com.github.particlepoc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1057594243834-e14iba433nnr2g2abbdt2vivmsbks8o7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDS_ytSjSkzam27GxZGEFuJlglzF89oQxk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
