@@ -1,23 +1,27 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion "24.0.2"
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
 
     defaultConfig {
         applicationId "com.github.particlepoc"
         versionCode 1
         versionName "1.0"
 
-        minSdkVersion 15
-        targetSdkVersion 24
+        minSdkVersion 9
+        targetSdkVersion 25
     }
 }
 
+def appCompatVersion = '25.0.0';
+def playServicesVersion = '9.6.1';
+
 dependencies {
-    compile 'com.android.support:appcompat-v7:24.2.1'
-    compile 'com.google.android.gms:play-services:9.6.1'
-    compile 'com.google.firebase:firebase-messaging:9.6.1'
+    compile "com.android.support:appcompat-v7:$appCompatVersion"
+    compile "com.google.android.gms:play-services:$playServicesVersion"
+    compile "com.google.firebase:firebase-messaging:$playServicesVersion"
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta2'
 }
 
 apply plugin: 'com.google.gms.google-services'
