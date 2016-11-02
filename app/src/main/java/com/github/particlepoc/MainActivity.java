@@ -92,9 +92,12 @@ public class MainActivity extends AppCompatActivity {
             TextView text2 = (TextView) item.findViewById(R.id.text2);
             text2.setText(message.getNotification().getBody());
 
-            Integer circleDrawableId = COLORS.get(message.getData().get("color"));
-            if (circleDrawableId != null) {
-                ((ImageView) item.findViewById(R.id.icon)).setImageResource(circleDrawableId);
+            String color = message.getData().get("color");
+            if (color != null) {
+                Integer circleDrawableId = COLORS.get(color.toLowerCase());
+                if (circleDrawableId != null) {
+                    ((ImageView) item.findViewById(R.id.icon)).setImageResource(circleDrawableId);
+                }
             }
 
             list.addView(item);
